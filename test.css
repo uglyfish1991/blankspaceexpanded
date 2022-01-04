@@ -398,7 +398,7 @@ pre {
     display:flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: 70%;
+
 }
 
 .eeinnerfix{
@@ -425,7 +425,6 @@ pre {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 70%;
 }
 
 .eeinner{

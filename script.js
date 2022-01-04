@@ -742,7 +742,7 @@ lvlFourFontFamily = () => {
 
 fullCheckD = () => {
     if (lvl4FontFamily.value == "font-family" && lvl4FontSize.value == "px" && lvl4Bg.value == "image") {
-        help4.textContent = "Amazing work! Congratulations! You've completed the CSS Challenge!"
+        help4.textContent = "Amazing work! Time for the next challenge!"
     } else {
         help4.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
@@ -755,7 +755,8 @@ const eeNav = document.getElementsByClassName("eenavfix")[0]
 const eeCont = document.getElementsByClassName("eecontentfix")[0]
 const lvl5Flex = document.getElementById("levelFiveFlex") // first input box for flex
 const lvl5Even = document.getElementById("levelFiveEven") // second input box for evenly
-const lvl5Col = document.getElementById("levelFiveCol") // second input box for column
+const lvl5Col = document.getElementById("levelFiveCol") // third input box for column
+const lvl5Alig = document.getElementById("levelFiveAlig") // third input box for column
 
 lvlFiveFlex = () => {
     
@@ -824,5 +825,25 @@ lvlFiveCol = () => {
         eeCont.style.flexDirection="row";
         help5.textContent = "By default, flex will display in a row. What else can we declare?"
         lvl5Col.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlFiveAlig = () => {
+    
+    if (lvl5Alig.value == "align-items") {
+        eeCont.style.alignItems="center";
+        help5.textContent ="We've flipped our axis! By forcing Flexbox into a column, our main axis now runs top to bottom, and our cross axis runs left to right! If we're set to flex-direction:column; we'll see it's now align-items that moves our content into the centre, not justify-content"
+        lvl5Alig.style.backgroundColor= "lightgreen";
+    } else {
+        help5.textContent = "Have a look at our other flex container, the nav bar. What two properties are we using to position our content on the page?"
+        lvl5Alig.style.backgroundColor = "lightcoral";
+    }
+}
+
+fullCheckE = () => {
+    if (lvl5Flex.value == "flex" && lvl5Even.value == "evenly" && lvl5Col.value == "column" && lvl5Alig.value == "align-items") {
+        help5.textContent = "Amazing work! Congratulations! One more level to go! Press \"Next >\" above to continue!"
+    } else {
+        help5.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
 }
