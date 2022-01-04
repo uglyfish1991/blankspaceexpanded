@@ -1,0 +1,434 @@
+/* Full page CSS */
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); /*only for level 4 */
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* Currently on all imgs - fit their containers. Are any imgs free? */
+img {
+    max-width:100%;
+}
+
+.helptext {
+    text-align: center;
+    color: darkred;
+    font-weight: 700;
+}
+
+input {
+    border: 0px;
+    margin-top: 1px;
+    background-color:lightcoral;
+    width: 20%;
+}
+
+.headerleft{
+    background-color: #fbb03b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width:7%;
+}
+
+button{
+    background-color:#264d9a;
+    border: 0px;
+    padding:17px;
+    color:#fbb03b;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color:#4f77c5;
+    border: 0px;
+    color:#FFFFFF;
+}
+
+.centre {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* On page shrink, margin causes issues? What if I put a super-thick white border on l&r instead? */
+pre {
+    background-color: rgb(216, 216, 216);
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    padding:2%;
+}
+
+/* Code for each container - specific CSS will be added with extra class if necessary. */
+.container{
+    display: flex;
+    justify-content: space-between;
+    height:99vh;
+    width:100%;
+}
+
+/* Holder for left hand content */
+.content {
+    height: 100%;
+    width:59%;
+    overflow-y:scroll;
+    text-align: center;
+    border-right: 2px solid rgb(221, 221, 221);
+}
+
+/* Holder for right hand content - flex is on for the  columns */
+.content2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:41%;
+    overflow-y:scroll;
+}
+
+/* Both right hand boxes are labelled right - top box will also have an id. Is there a better way of doing this? */
+.right{
+    width: 100%;
+    height:100%;
+    overflow:auto;
+}
+/* Unique / Specific Codes - mainly for different levels */
+/* Lvl Specific CSS */
+
+/* Classes for none/flex on main container */
+
+/*Level 1a - ALL PREFIXES ARE ab*/
+
+.onea{
+    
+}
+
+/*Code for incorrect pane in level 1a*/
+.abfix{
+    background-color:seashell;
+}
+
+.abcontentfix{
+    background-color: lightblue;
+}
+
+/*Code for correct pane in level 1a*/
+.ab{
+    background-color:seashell;
+}
+
+.abcontent{
+    background-color: lightblue;
+    padding: 20px;
+    border: 30px solid orange;
+    margin: 40px;
+}
+
+
+/*Level 1B - ALL PREFIXES ARE ab*/
+
+.oneb{
+    display:none;
+}
+
+/*Code for incorrect pane in level 1a*/
+.bafix{
+    background-color:seashell;
+}
+
+.bacontentfix{
+    background-color: lightblue;
+    padding: 50px 20px;
+    border-right: 30px solid red;
+    border-bottom: 20px solid;
+    border-left: 3px solid orange;
+}
+
+/*Code for correct pane in level 1a*/
+.ba{
+    background-color:seashell;
+}
+
+.bacontent{
+    background-color: lightblue;
+    padding: 50px 20px;
+    border-top: 10px solid purple;
+    border-right: 30px solid red;
+    border-bottom: 20px solid green;
+    border-left: 3px solid orange;
+    margin:0px 60px 15px 20px;
+}
+
+
+/*Level One */
+.one {
+    display:none;
+}
+
+.aa{
+    background-color: cadetblue;
+}
+.coral {
+    text-align: center;
+}
+
+.leveloneh{
+    text-align: center;
+    color:coral;
+    text-decoration:underline;
+}
+
+.middle{
+    margin-left: auto;
+    display: block;
+    background-color: darkblue;
+    color: darkgoldenrod;
+
+}
+
+.levelone{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: darkblue;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+#right{
+    background-color: white;
+}
+
+/*Level Two - REMEMBER TO CHANGE THIS BACK TO NONE AFTER CODING*/
+.two {
+    display: none;
+}
+
+/*Code for broken pane in level 2*/
+.bbfix{
+    background-color:white;
+}
+
+.bbheaderfix{
+    width:100%;
+    background-color:coral;
+    text-align: right;
+    font-size: 14px;
+}
+
+.bbcontentfix{
+    background-color: cornsilk;
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 5px lightcoral;
+    font-size: 18px;
+}
+
+/*Code for correct pane in level 2*/
+.bb{
+    background-color:peachpuff;
+
+}
+
+.bbheader{
+    width:100%;
+    background-color:coral;
+    text-align: center;
+    font-size: 40px;
+}
+
+.bbcontent{
+    background-color: cornsilk;
+    width:75%;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 5px solid lightcoral;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/*Level Three - REMEMBER TO CHANGE THIS BACK TO NONE AFTER CODING*/
+.three {
+    display: none;
+}
+
+/*Code for broken pane in level 3*/
+.ccfix{
+    background-color:teal;
+}
+
+.ccimgfix{
+    border: 5px solid white;
+    margin: 5px;
+   }
+
+.cccontentfix{
+    background-color: palegreen;
+    color: green;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 15px green;
+    padding: 20px;
+}
+
+/*Code for correct pane in level 3*/
+.cc{
+    background-color:teal;
+    border-top: 3vh ridge #bb4430;
+}
+
+.ccimg{
+    float: left;
+    border: 5px solid white;
+    margin: 5px;
+   }
+
+.cccontent{
+    box-sizing: border-box;
+    background-color: palegreen;
+    color: green;
+    font-weight:700;
+    width:400px;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 15px ridge green;
+    padding: 20px;
+}
+
+/*Level Four - REMEMBER TO CHANGE THIS BACK TO NONE AFTER CODING*/
+
+.four{
+    display: none;
+}
+
+/*Code for broken pane in level 4*/
+.ddfix{
+    background-color: white;
+}
+
+.ddnavfix{
+    height:10%;
+    background-color: rgb(0, 8, 12);
+    text-align: center;
+}
+
+.ddnavfix a{
+    color:oldlace;
+    padding: 10px;
+}
+
+.ddcontentfix{
+    box-sizing: border-box;
+    background-color:rgba(255, 255, 255, 0.7);
+    width:70%;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+}
+
+/*Code for correct pane in level 4*/
+.dd{
+    background-image: url('bg.jpeg');
+}
+
+.ddnav{
+    height:10%;
+    background-color:black;
+    text-align: center;
+}
+
+.ddnav a{
+    color:papayawhip;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.ddcontent{
+    box-sizing: border-box;
+    background-color:rgba(255, 255, 255, 0.7);
+    font-family: 'Josefin Sans', sans-serif;
+    width:70%;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+}
+
+/*Level Five - REMEMBER TO CHANGE THIS BACK TO NONE AFTER CODING*/
+
+.five{
+    display:none;
+}
+
+/*Code for incorrect pane in level 5*/
+.eefix{
+    background-color:seashell;
+}
+
+.eenavfix{
+    height:10%;
+    background-color: violet;
+    display: block;
+    align-items:center;
+    color:rebeccapurple;
+    font-size: 20px;
+}
+
+.eecontentfix{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 70%;
+}
+
+.eeinnerfix{
+    width:85%;
+    background-color: thistle;
+}
+/*Code for correct pane in level 5*/
+.ee{
+    background-color:seashell;
+}
+
+.eenav{
+    height:10%;
+    background-color: violet;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    color:rebeccapurple;
+    font-size: 20px;
+}
+
+.eecontent{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+}
+
+.eeinner{
+    width:85%;
+    background-color: thistle;
+}

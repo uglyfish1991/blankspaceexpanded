@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css">
+    <title>Blank Space CSS Practise</title>
+</head>
+
+<body>
+    <!-- Code for Level 1 - Left pane for entering, top right for updating, bottom right for comparing. -->
+    <div class="container one">
+        <div class="content">
+            <div class="headerleft">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+                <div>
+                    <button onclick="add()">Next ></button>
+                </div>
+            </div>
+            <h1>CSS Practise</h1>
+            CSS can be a little scary! There's <i>a lot</i> of it about - and sometimes it can be hard to know where to
+            start!<br>
+            Try filling in the gaps below to see if you can get the frame on the right to match the image above as
+            closely as you can.<br>
+            Remember - no one has all this information in their head all the time! Feel free to research CSS - the
+            important thing is being able to apply it!<br>
+            Feel free to use <a href="https://www.w3schools.com/css/" target="_blank">W3 Schools CSS</a> if you need a
+            hand - or pop into the course-materials channel on Slack!
+            <pre>
+                body{
+                    <input type="text" id="bgsyntax" onkeyup="lineOne()">:<input type="text" id="bginput" onkeydown="bgValue()" onkeyup="bgValue()"> 
+                    <!-- <button id="butTon">Check line</button> -->
+                    color: yellow;
+                }
+                
+                h1{
+                    text-align: center;
+                    <input type="text" id="hcolour" onkeydown="hOneColour()"onkeyup="hOneColour()"> coral;
+                    <input type="text" id ="tdunderline" onkeyup="tdUnderline()">-decoration:underline;
+                }
+                
+                .middle{
+                    width: 400<input type="text" id="pxsize" onkeyup="pxSize()">;
+                    margin-left: auto;
+                    margin-<input type="text" id="marright" onkeyup="marR()">: auto;
+                    display: block;
+                    background-color: darkblue;
+                    color: darkgoldenrod;
+                    text-align: <input type="text" id="midalign" onkeyup="midAlign()">;
+                }
+            </pre>
+            <p id="helptext1" class="helptext">Try entering values above to make the right hand side of the screen match
+                the image above
+            </p>
+            <button onclick="fullCheck()" class="centre">All done?</button>
+        </div>
+        <div class="content2">
+            <div id="right" class="right">
+                <h1 class="coral">Hello and Welcome</h1>
+                <div class="middle">
+                    Welcome to my website I hope you enjoy it<br><br>
+                    This div has the class of "middle"<br><br>
+                    <b>Helpful hints:</b><br>
+                    cadetblue<br>
+                    darkblue<br>
+                    darkgoldenrod<br>
+
+                </div>
+                </p>
+            </div>
+            <div class="right aa">
+                <h1 class="leveloneh">Hello and Welcome</h1>
+                <div class="levelone">
+                    Welcome to my website I hope you enjoy it<br><br>
+                    This div has the class of "middle"<br><br>
+                    <b>Helpful hints:</b><br>
+                    cadetblue<br>
+                    darkblue<br>
+                    darkgoldenrod<br>
+
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Level 2 Codes here
+Code for Level 2 - Left pane for entering, top right for updating, bottom right for comparing 
+Check prefix/suffix of IDS match level number! ALL IDs need b in-->
+    <div class="container two">
+        <div class="content">
+            <div class="headerleft">
+                <div class="logo">
+                    <img src="logo.png">
+                </div>
+                <div>
+                    <button onclick="add()">Next ></button>
+                </div>
+            </div>
+            <h1>Level 2</h1>
+            START WORK ON LVL 2 WHEN YOU'VE GOT FEEDBACK FOR INTERFACE / WAY L1 WORKS. NO POINT C&P IT ALL IF IT ISN'T GOOD KTHNX<br>
+            Try filling in the gaps below to see if you can get the frame on the right to match the image above as
+            closely as you can.<br>
+            Think you might been some help along the way? Try these links:<br>
+            <a href="https://www.w3schools.com/css/" target="_blank">W3 Schools CSS</a> <a
+                href="https://www.w3schools.com/cssref/css_colors.asp">CSS String Colour Values</a>
+            <pre>
+stuff
+goes
+here
+            </pre>
+            <!-- <button id="butTon">Click Me</button> -->
+            <p>Helptext goes here
+            </p>
+        </div>
+        <div class="content2">
+            <div class="right">
+                <h1 class="coral">Hello and Welcome</h1>
+                <div class="middle">
+                    Welcome to my website I hope you enjoy it<br>
+                    I won't.
+                </div>
+                </p>
+            </div>
+            <div class="right">
+                <img src="sadness.png">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

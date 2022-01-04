@@ -1,0 +1,25 @@
+body{
+    background-color:cadetblue;
+    color: yellow;
+}
+
+h1{
+    text-align: center;
+    color: coral;
+    text-decoration:underline;
+}
+
+img {
+    height:40%;
+    margin:20px;
+}
+
+.middle{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: darkblue;
+    color: darkgoldenrod;
+    text-align: center;
+}
