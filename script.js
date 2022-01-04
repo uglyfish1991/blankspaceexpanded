@@ -13,7 +13,7 @@ const refresh = () => {
 }
 
 const add = () => {
-    if (current < 6) {
+    if (current < 7) {
         current++
         console.log(current)
         refresh()
@@ -742,20 +742,21 @@ lvlFourFontFamily = () => {
 
 fullCheckD = () => {
     if (lvl4FontFamily.value == "font-family" && lvl4FontSize.value == "px" && lvl4Bg.value == "image") {
-        help4.textContent = "Amazing work! Congratulations! You've completed the CSS Challenge!"
+        help4.textContent = "Amazing work! Time for the next challenge!"
     } else {
         help4.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
 }
 
 // Level 5 Variables
-const help5 = document.getElementById("helptext5") //Helptext for Level 4 - same class, different ID
+const help5 = document.getElementById("helptext5") //Helptext for Level 5 - same class, different ID
 
 const eeNav = document.getElementsByClassName("eenavfix")[0]
 const eeCont = document.getElementsByClassName("eecontentfix")[0]
 const lvl5Flex = document.getElementById("levelFiveFlex") // first input box for flex
 const lvl5Even = document.getElementById("levelFiveEven") // second input box for evenly
-const lvl5Col = document.getElementById("levelFiveCol") // second input box for column
+const lvl5Col = document.getElementById("levelFiveCol") // third input box for column
+const lvl5Alig = document.getElementById("levelFiveAlig") // third input box for column
 
 lvlFiveFlex = () => {
     
@@ -824,5 +825,96 @@ lvlFiveCol = () => {
         eeCont.style.flexDirection="row";
         help5.textContent = "By default, flex will display in a row. What else can we declare?"
         lvl5Col.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlFiveAlig = () => {
+    
+    if (lvl5Alig.value == "align-items") {
+        eeCont.style.alignItems="center";
+        help5.textContent ="We've flipped our axis! By forcing Flexbox into a column, our main axis now runs top to bottom, and our cross axis runs left to right! If we're set to flex-direction:column; we'll see it's now align-items that moves our content into the centre, not justify-content"
+        lvl5Alig.style.backgroundColor= "lightgreen";
+    } else {
+        help5.textContent = "Have a look at our other flex container, the nav bar. What two properties are we using to position our content on the page?"
+        lvl5Alig.style.backgroundColor = "lightcoral";
+    }
+}
+
+fullCheckE = () => {
+    if (lvl5Flex.value == "flex" && lvl5Even.value == "evenly" && lvl5Col.value == "column" && lvl5Alig.value == "align-items") {
+        help5.textContent = "Amazing work! Congratulations! One more level to go! Press \"Next >\" above to continue!"
+    } else {
+        help5.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
+    }
+}
+
+// Level 6 Variables
+const help6 = document.getElementById("helptext6") //Helptext for Level 6 - same class, different ID
+
+const ffNav = document.getElementsByClassName("ffnavfix")[0]
+const ffCont = document.getElementsByClassName("ffcontentfix")[0]
+const ffImg = document.getElementsByClassName("ffimgfix")[0]
+const lvl6Disp = document.getElementById("levelSixDisp") // first input box for flex
+const lvl6Bar = document.getElementById("levelSixBar") // second input box for nav
+const lvl6Hover = document.getElementById("levelSixHover") // third input box for hover
+const lvl6Bord= document.getElementById("levelSixBord") // fourth input box for border
+
+lvlSixDisp = () => {
+    
+    if (lvl6Disp.value == "display") {
+        ffNav.style.display="flex"
+        help6.textContent ="Exactly - to be able to use our flex properties, we must first set the div to display:flex!"
+        lvl6Disp.style.backgroundColor= "lightgreen";
+    } else {
+        ffNav.style.display="block"
+        help6.textContent = "We're using justify-content and align-items - so we're setting something to \"flex\" - take a look at other past examples for a hint!"
+        lvl6Disp.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlSixBar = () => {
+    
+    if (lvl6Bar.value == "nav") {
+        ffNav.className='ffnav'
+        help6.textContent ="We don't want to make every link white, just the ones in our navbar. To target these specifically, we can use .nav and then specify a. This will target every <a> element with a parent of .nav!"
+        lvl6Bar.style.backgroundColor= "lightgreen";
+    } else {
+        ffNav.className='ffnavfix'
+        help6.textContent = "What is the class we're trying to target? Have a look at the class above and below."
+        lvl6Bar.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlSixHover = () => {
+    
+    if (lvl6Hover.value == "hover") {
+        ffNav.className='ffnav'
+        help6.textContent ="the state we've chosen to style is hover. By using this, we're saying when our user hovers over any link within the div \"nav\" the text should turn orange!"
+        lvl6Hover.style.backgroundColor= "lightgreen";
+    } else {
+        ffNav.className='ffnavfix'
+        help6.textContent = "Take a look at the pane on the right, and put your mouse over the link. What state is this? check out W3 schools for examples!"
+        lvl6Hover.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlSixBord = () => {
+    
+    if (lvl6Bord.value == "border") {
+        ffImg.className='ffimg'
+        help6.textContent ="We can change many things with pseudo classes - they're not all limited to links! Here we've changed it so when the user hovers over a picture, the border changes from white to black, and changes from opaque to semi-transparent!"
+        lvl6Bord.style.backgroundColor= "lightgreen";
+    } else {
+        ffImg.className='ffimgfix'
+        help6.textContent = "The content is the picture, there's no transparent space around it....what part of the box model could this be?"
+        lvl6Bord.style.backgroundColor = "lightcoral";
+    }
+}
+
+fullCheckE = () => {
+    if (lvl6Disp.value == "display" && lvl6Bar.value == "nav" && lvl6Hover.value == "hover" && lvl6Bord.value == "border") {
+        help6.textContent = "Congratulations! You've completed the activity! Feel free to look back over this any time you need - good luck with your own CSS!"
+    } else {
+        help6.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
 }
