@@ -1,5 +1,5 @@
 /* Full page CSS */
- @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); /*only for level 4 */
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); /*only for level 4 onwards*/
 
 body {
     box-sizing: border-box;
@@ -147,9 +147,9 @@ pre {
 .bacontentfix{
     background-color: lightblue;
     padding: 50px 20px;
-    border-right: 30px solid red;
+    border-right: 30px solid orange;
     border-bottom: 20px solid;
-    border-left: 3px solid orange;
+    border-left: 3px solid green;
 }
 
 /*Code for correct pane in level 1a*/
@@ -160,10 +160,10 @@ pre {
 .bacontent{
     background-color: lightblue;
     padding: 50px 20px;
-    border-top: 10px solid purple;
-    border-right: 30px solid red;
-    border-bottom: 20px solid green;
-    border-left: 3px solid orange;
+    border-top: 10px solid red;
+    border-right: 30px solid orange;
+    border-bottom: 20px solid yellow;
+    border-left: 3px solid green;
     margin:0px 60px 15px 20px;
 }
 
@@ -398,7 +398,7 @@ pre {
     display:flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: 70%;
+
 }
 
 .eeinnerfix{
@@ -418,17 +418,114 @@ pre {
     align-items:center;
     color:rebeccapurple;
     font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
 
 .eecontent{
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    height: 70%;
+    height:90%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .eeinner{
     width:85%;
     background-color: thistle;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*Level Six - REMEMBER TO CHANGE THIS BACK TO NONE AFTER CODING*/
+
+.six{
+    display:none;
+}
+
+/*Code for incorrect pane in level 6*/
+.fffix{
+    background-image: url('bg2.jpg');
+}
+
+.ffnavfix{
+    height:10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    justify-content: space-evenly;
+    align-items:center;
+    font-size: 20px;
+}
+
+.ffnavfix a{
+    color: blue;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.ffcontentfix{
+    display:flex;
+    justify-content: space-evenly;
+    height:80%;
+}
+
+.ffinnerfix{
+    padding-top:10px;
+    width:85%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ffimgfix{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid white;
+}
+
+/*Code for correct pane in level 6*/
+.ff{
+    background-image: url('bg2.jpg');
+}
+
+.ffnav{
+    height:10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    font-size: 20px;
+}
+
+.ffnav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.ffnav a:hover{
+    color: orange;
+}
+
+.ffcontent{
+    display:flex;
+    justify-content: space-evenly;
+    height:80%;
+}
+
+.ffinner{
+    padding-top:10px;
+    width:85%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ffimg{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid white;
+}
+
+.ffimg:hover{
+    border: 10px solid rgba(0, 0, 0, 0.5);
 }
