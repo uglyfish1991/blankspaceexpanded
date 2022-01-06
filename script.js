@@ -13,7 +13,7 @@ const refresh = () => {
 }
 
 const add = () => {
-    if (current < 6) {
+    if (current < 7) {
         current++
         console.log(current)
         refresh()
@@ -111,7 +111,7 @@ lvlOneAMarg = () => {
 
 fullCheck1a = () => {
     if (lvl1aPad.value == "padding" && lvl1aBord.value == "border" && lvl1aMarg.value == "margin") {
-        help1a.textContent = "Amazing work! Congratulations! You've completed Level 1 - The Box Model! The box model is really helpful for us - you can see it on your own elements by right clicking your page, selecting \"inspect\" and hovering over different elements! Move on to Level 1B by clicking \"Next >\" at the top!"
+        help1a.textContent = "Amazing work! Congratulations! You've completed Level 1 - The Box Model! The box model is really helpful for us - you can see it on your own elements by right clicking your page, selecting \"inspect\" and hovering over different elements! Some elements will have paddings and margins on by default - remember how we looked at body earlier and it had 8px? We wouldn't have known that without the box model! Move on to Level 2 by clicking \"Next >\" at the top!"
     } else {
         help1a.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
@@ -129,16 +129,18 @@ const lvl1bMarg = document.getElementById("levelOneBMarg") // first input box fo
 lvlOneBTop = () => {
     console.log("border top level 1b")
     if (lvl1bTop.value == "border") {
-        baCont.style.borderTop="10px solid purple";
-        help1ba.textContent ="Yes! The border at the top of the content is 10px, solid and purple. We've made sure that only the top border has these values by using the border-top property, as opposed to just border"
+        console.log("if matched")
+        baCont.style.borderTop="10px solid red";
+        help1ba.textContent ="Yes! The border at the top of the content is 10px, solid and red. We've made sure that only the top border has these values by using the border-top property, as opposed to just border"
+        console.log("if complete")
         lvl1bTop.style.backgroundColor= "lightgreen";
 
     } else if (lvl1bTop.value == "padding") {
-        help1ba.textContent ="There is padding on this, but it isn't the correct input for this box! Use the rest of the CSS for clues - what is purple on the correct pane? Our padding is currently transparent."
+        help1ba.textContent ="There is padding on this, but it isn't the correct input for this box! Use the rest of the CSS for clues - what is red on the correct pane? Our padding is currently transparent."
         lvl1bTop.style.backgroundColor= "lightcoral";
 
     } else if (lvl1bTop.value == "margin") {
-        help1ba.textContent ="There are margins on this, but this isn't the correct input for this box. Use the rest of the CSS for clues - what is purple on the correct pane? Our margins are currently transparent"
+        help1ba.textContent ="There are margins on this, but this isn't the correct input for this box. Use the rest of the CSS for clues - what is red on the correct pane? Our margins are currently transparent"
         lvl1bTop.style.backgroundColor= "lightcoral";
     }
 
@@ -150,15 +152,15 @@ lvlOneBTop = () => {
 
 lvlOneBBot = () => {
     console.log("border bottom level 1b")
-    if (lvl1bBot.value == "green") {
-        baCont.style.borderBottom="20px solid green";
-        help1ba.textContent ="Yes! It is the border-bottom property which has a green value. With just a size and style (in this case 20px and solid) the colour will default to black."
+    if (lvl1bBot.value == "yellow") {
+        baCont.style.borderBottom="20px solid yellow";
+        help1ba.textContent ="Yes! It is the border-bottom property which has a yellow value. With just a size and style (in this case 20px and solid) the colour will default to black."
         lvl1bBot.style.backgroundColor= "lightgreen";
     }
 
     else {
         baCont.style.borderBottom="20px solid " + lvl1bBot.value;
-        help1ba.textContent = "Trying getting the colour of the bottom border to match on both panes! Colour strings are easier to guess - try green!"
+        help1ba.textContent = "Trying getting the colour of the bottom border to match on both panes! Colour strings are easier to guess than RGB or Hex - try yellow!"
         lvl1bBot.style.backgroundColor = "lightcoral";
     }
 }
@@ -189,8 +191,8 @@ lvlOneBMarg = () => {
 }
 
 fullCheck1ba = () => {
-    if (lvl1bTop.value == "border" && lvl1bBot.value == "green" && lvl1bMarg.value == "0px 60px 15px 20px;") {
-        help1ba.textContent = "Amazing work! Congratulations! You've completed Level 1B. Move on to Level 2 by clicking \"Next >\" at the top!"
+    if (lvl1bTop.value == "border" && lvl1bBot.value == "yellow" && lvl1bMarg.value == "0px 60px 15px 20px;") {
+        help1ba.textContent = "Amazing work! Congratulations! We looked at a few methods here, you should pick the most efficient one for your situation! Having control over the specific side is really helpful - you can indent content, space divs out, and even centre things with margin-left and margin-right! You've completed Level 2. Move on to Level 3 by clicking \"Next >\" at the top!"
     } else {
         help1ba.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
@@ -242,7 +244,7 @@ bgValue = () => {
     } else if (bginput.value == "background-color") {
         rightframe.style.backgroundColor = bgcolourinput.value;
         bgcolourinput.style.backgroundColor = "lightcoral";
-        help.textContent = "Great work! You've managed to change the background of the page element <body>. Try getting the background to match exactly"
+        help.textContent = "Great work! You've managed to change the background of the page element <body>. Try getting the background to match exactly. Take a look at the colour strings on the right for a hint!"
     }
     else {
         help.textContent = "Try entering the first part of the CSS before you enter a colour"
@@ -742,20 +744,43 @@ lvlFourFontFamily = () => {
 
 fullCheckD = () => {
     if (lvl4FontFamily.value == "font-family" && lvl4FontSize.value == "px" && lvl4Bg.value == "image") {
-        help4.textContent = "Amazing work! Congratulations! You've completed the CSS Challenge!"
+        help4.textContent = "Amazing work! Time for the next challenge!"
     } else {
         help4.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
 }
 
 // Level 5 Variables
-const help5 = document.getElementById("helptext5") //Helptext for Level 4 - same class, different ID
+const help5 = document.getElementById("helptext5") //Helptext for Level 5 - same class, different ID
 
 const eeNav = document.getElementsByClassName("eenavfix")[0]
 const eeCont = document.getElementsByClassName("eecontentfix")[0]
-const lvl5Flex = document.getElementById("levelFiveFlex") // first input box for flex
-const lvl5Even = document.getElementById("levelFiveEven") // second input box for evenly
-const lvl5Col = document.getElementById("levelFiveCol") // second input box for column
+const lvl5Wild = document.getElementById("levelFiveWild") // first input box for flex
+const lvl5Flex = document.getElementById("levelFiveFlex") // second input box for flex
+const lvl5Even = document.getElementById("levelFiveEven") // third input box for evenly
+const lvl5Col = document.getElementById("levelFiveCol") // fourth input box for column
+const lvl5Alig = document.getElementById("levelFiveAlig") // fifth input box for align-items
+
+lvlFiveWild = () => {
+    
+    if (lvl5Wild.value == "*") {
+        eeNav.style.fontFamily="'Josefin Sans'";
+        eeCont.style.fontFamily="'Josefin Sans'";
+        help5.textContent ="* is a wildcard. Whatever properties and values we define in the wildcard will apply to every single element and every single selector unless we say otherwise! This can be very handy in situations like this, where want every font to be the same no matter what - but it should be used with caution! If I was to apply a background image wih *, every single element would have that background, things would get messy quickly!"
+        lvl5Wild.style.backgroundColor= "lightgreen";
+
+    } else if (lvl5Wild.value == "body") {
+        eeNav.style.fontFamily="'Josefin Sans'";
+        eeCont.style.fontFamily="'Josefin Sans'";
+        help5.textContent ="Body does work! Sort of....because of CSS inheritance rules, anything nested within <body> would inherit that font, unless it had default styling that said otherwise. But body appears just underneath this, so what else could I be using to apply the font to every single thing?"
+        lvl5Wild.style.backgroundColor= "lightcoral";
+    } else {
+        eeNav.style.fontFamily="serif";
+        eeCont.style.fontFamily="serif";
+        help5.textContent = "You might need to do some research for this! We mentioned it in the CSS lesson right at the start - we're looking for a symbol that we use to apply styling to everything"
+        lvl5Wild.style.backgroundColor = "lightcoral";
+    }
+}
 
 lvlFiveFlex = () => {
     
@@ -824,5 +849,96 @@ lvlFiveCol = () => {
         eeCont.style.flexDirection="row";
         help5.textContent = "By default, flex will display in a row. What else can we declare?"
         lvl5Col.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlFiveAlig = () => {
+    
+    if (lvl5Alig.value == "align-items") {
+        eeCont.style.alignItems="center";
+        help5.textContent ="We've flipped our axis! By forcing Flexbox into a column, our main axis now runs top to bottom, and our cross axis runs left to right! If we're set to flex-direction:column; we'll see it's now align-items that moves our content into the centre, not justify-content"
+        lvl5Alig.style.backgroundColor= "lightgreen";
+    } else {
+        help5.textContent = "Have a look at our other flex container, the nav bar. What two properties are we using to position our content on the page?"
+        lvl5Alig.style.backgroundColor = "lightcoral";
+    }
+}
+
+fullCheckE = () => {
+    if (lvl5Wild.value == "*" && lvl5Flex.value == "flex" && lvl5Even.value == "evenly" && lvl5Col.value == "column" && lvl5Alig.value == "align-items") {
+        help5.textContent = "Amazing work! Congratulations! Flexbox is a really useful tool, and one we will use on this course, but it isn't the only way of laying content out. Because it can only display in one direction at a time, you might end up making boxes in boxes just to lay your content out! It works - but it's not very efficient! Take a look at CSS Grid for an alternative if you'd like! One more level to go! Press \"Next >\" above to continue!"
+    } else {
+        help5.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
+    }
+}
+
+// Level 6 Variables
+const help6 = document.getElementById("helptext6") //Helptext for Level 6 - same class, different ID
+
+const ffNav = document.getElementsByClassName("ffnavfix")[0]
+const ffCont = document.getElementsByClassName("ffcontentfix")[0]
+const ffImg = document.getElementsByClassName("ffimgfix")[0]
+const lvl6Disp = document.getElementById("levelSixDisp") // first input box for flex
+const lvl6Bar = document.getElementById("levelSixBar") // second input box for nav
+const lvl6Hover = document.getElementById("levelSixHover") // third input box for hover
+const lvl6Bord= document.getElementById("levelSixBord") // fourth input box for border
+
+lvlSixDisp = () => {
+    
+    if (lvl6Disp.value == "display") {
+        ffNav.style.display="flex"
+        help6.textContent ="Exactly - to be able to use our flex properties, we must first set the div to display:flex!"
+        lvl6Disp.style.backgroundColor= "lightgreen";
+    } else {
+        ffNav.style.display="block"
+        help6.textContent = "We're using justify-content and align-items - so we're setting something to \"flex\" - take a look at other past examples for a hint!"
+        lvl6Disp.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlSixBar = () => {
+    
+    if (lvl6Bar.value == "nav") {
+        ffNav.className='ffnav'
+        help6.textContent ="We don't want to make every link white, just the ones in our navbar. To target these specifically, we can use .nav and then specify a. This will target every <a> element with a parent of .nav!"
+        lvl6Bar.style.backgroundColor= "lightgreen";
+    } else {
+        ffNav.className='ffnavfix'
+        help6.textContent = "What is the class we're trying to target? Have a look at the class above and below."
+        lvl6Bar.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlSixHover = () => {
+    
+    if (lvl6Hover.value == "hover") {
+        ffNav.className='ffnav'
+        help6.textContent ="the state we've chosen to style is hover. By using this, we're saying when our user hovers over any link within the div \"nav\" the text should turn orange!"
+        lvl6Hover.style.backgroundColor= "lightgreen";
+    } else {
+        ffNav.className='ffnavfix'
+        help6.textContent = "Take a look at the pane on the right, and put your mouse over the link. What state is this? check out W3 schools for examples!"
+        lvl6Hover.style.backgroundColor = "lightcoral";
+    }
+}
+
+lvlSixBord = () => {
+    
+    if (lvl6Bord.value == "border") {
+        ffImg.className='ffimg'
+        help6.textContent ="We can change many things with pseudo classes - they're not all limited to links! Here we've changed it so when the user hovers over a picture, the border changes from white to black, and changes from opaque to semi-transparent!"
+        lvl6Bord.style.backgroundColor= "lightgreen";
+    } else {
+        ffImg.className='ffimgfix'
+        help6.textContent = "The content is the picture, there's no transparent space around it....what part of the box model could this be?"
+        lvl6Bord.style.backgroundColor = "lightcoral";
+    }
+}
+
+fullCheckE = () => {
+    if (lvl6Disp.value == "display" && lvl6Bar.value == "nav" && lvl6Hover.value == "hover" && lvl6Bord.value == "border") {
+        help6.textContent = "Congratulations! You've completed the activity! Feel free to look back over this any time you need - good luck with your own CSS!"
+    } else {
+        help6.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
 }

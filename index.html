@@ -21,12 +21,18 @@
                 </div>
             </div>
             <h1>Level 1 - The Box Model</h1>
-            Welcome to Blank Space, a chance for you to solve some CSS problems before tackling your own work! CSS can be a little scary! There's <i>a lot</i> of it about - and sometimes it can be hard to know where to start! In this activity, you'll move through 8 levels. Try filling in the gaps in the red boxes to see if you can get the frame on your top right to match the frame on your bottom right. Try to get it to match as closely as you can! Helpful information will be written in the right hand pane (colours, sizes etc) while handy hints might appear below your code!<br>
-            <b>No one has all this information in their head all the time</b> so feel free to research as much CSS as you need - some activties will require it!
-           <br>
+            Welcome to Blank Space, a chance for you to solve some CSS problems before tackling your own work! CSS can
+            be a little scary! There's <i>a lot</i> of it about - and sometimes it can be hard to know where to start!
+            In this activity, you'll move through 8 levels. Try filling in the gaps in the red boxes to see if you can
+            get the frame on your top right to match the frame on your bottom right. Try to get it to match as closely
+            as you can! Helpful information will be written in the right hand pane (colours, sizes etc) while handy
+            hints might appear below your code!<br>
+            <b>No one has all this information in their head all the time</b> so feel free to research as much CSS as
+            you need - some activties will require it!
+            <br>
             Use <a href="https://www.w3schools.com/css/" target="_blank">W3 Schools CSS</a> if you need a
             hand - or pop into the course-materials channel on Slack! We'll start off with a recap of the Box Model.
-            
+
             <pre>
                 body{
                     background-color:seashell;
@@ -39,31 +45,36 @@
                     <input type="text" id="levelOneAMarg" onkeyup="lvlOneAMarg()">: 40px;
                 }
             </pre>
-            <p id="helptext1a" class="helptext">Try entering values above to make the right hand side of the screen match
+            <p id="helptext1a" class="helptext">Try entering values above to make the right hand side of the screen
+                match
                 the image above
             </p>
             <button onclick="fullCheck1a()" class="centre">All done?</button>
         </div>
         <div class="content2">
             <div class="right abfix">
-                    <div class="abcontentfix">
-                        This is the box model - we've made our content blue.<br>
-                        Surrounding our content is 20px of padding - it's transparent, so it also looks blue.<br>
-                        Surrounding the content and padding is the border - we've made it 30px, and orange so we can see it clearly.
+                <div class="abcontentfix">
+                    This is the box model - we've made our content blue.<br>
+                    Surrounding our content is 20px of padding - it's transparent, so it also looks blue.<br>
+                    Surrounding the content and padding is the border - we've made it 30px, and orange so we can see it
+                    clearly.
                 </div>
-                Outside of that is our margin - a transparent space outside of the border. We can see here that this text doesn't touch the orange border, because that div has a 40px margin on it.
+                Outside of that is our margin - a transparent space outside of the border. We can see here that this
+                text doesn't touch the orange border, because that div has a 40px margin on it.
             </div>
             <div class="right ab">
                 <div class="abcontent">
-                        This is the box model - we've made our content blue.<br>
-                        Surrounding our content is 20px of padding - it's transparent, so it also looks blue.<br>
-                        Surrounding the content and padding is the border - we've made it 30px, and orange so we can see it clearly.
+                    This is the box model - we've made our content blue.<br>
+                    Surrounding our content is 20px of padding - it's transparent, so it also looks blue.<br>
+                    Surrounding the content and padding is the border - we've made it 30px, and orange so we can see it
+                    clearly.
                 </div>
-                Outside of that is our margin - a transparent space outside of the border. We can see here that this text doesn't touch the orange border, because that div has a 40px margin on it. 
+                Outside of that is our margin - a transparent space outside of the border. We can see here that this
+                text doesn't touch the orange border, because that div has a 40px margin on it.
             </div>
         </div>
     </div>
-<!--Code for Level 1BA previxes are a bit funny because of the retrospecitive addition-->
+    <!--Code for Level 1BA previxes are a bit funny because of the retrospecitive addition-->
     <div class="container oneb">
         <div class="content">
             <div class="headerleft">
@@ -73,15 +84,16 @@
                 <div>
                     <button onclick="minus()">
                         < Previous</button>
-                    <button onclick="add()">Next ></button>
+                            <button onclick="add()">Next ></button>
                 </div>
             </div>
-            <h1>Level 1B - More Boxes!</h1>
-            Well done for your work on the box model! So far, we've applied our padding, borders, and margins quiet generally, but we can use CSS syntax to be a bit more specific.
-           <br>
+            <h1>Level 2 - More Boxes!</h1>
+            Well done for your work on the box model! So far, we've applied our padding, borders, and margins quiet
+            generally, but we can use CSS syntax to be a bit more specific.
+            <br>
             Use <a href="https://www.w3schools.com/css/" target="_blank">W3 Schools CSS</a> if you need a
             hand - or pop into the course-materials channel on Slack!
-            
+
             <pre>
                 body{
                     background-color:seashell;
@@ -90,37 +102,48 @@
                 .content{
                     background-color: lightblue;
                     padding: 50px 20px;
-                    <input type="text" id="levelOneBTop" onkeyup="lvlOneBTop()">-top: 10px solid purple;
-                    border-right: 30px solid red;
+                    <input type="text" id="levelOneBTop" onkeyup="lvlOneBTop()">-top: 10px solid red;
+                    border-right: 30px solid orange;
                     border-bottom: 20px solid <input type="text" id="levelOneBBot" onkeyup="lvlOneBBot()">;
-                    border-left: 3px solid orange;
+                    border-left: 3px solid green;
                     margin:<input type="text" id="levelOneBMarg" onkeyup="lvlOneBMarg()">
                 }
             </pre>
-            <p id="helptext1ba" class="helptext">Try entering values above to make the right hand side of the screen match
+            <p id="helptext1ba" class="helptext">Try entering values above to make the right hand side of the screen
+                match
                 the image above
             </p>
             <button onclick="fullCheck1ba()" class="centre">All done?</button>
         </div>
         <div class="content2">
             <div class="right bafix">
-                    <div class="bacontentfix">
-                        We don't always have to have all the sides of our padding, borders, and margins matching. There are a number of ways to be a bit more unique! We can use properties to pinpoint sides -  we can add "-top", "-bottom", "-left", and "-right" to our padding, borders, or margins.<br>
-                        We can also use shorthand to apply many values to one property! The values work in a clockwise direction, starting from the top, so:<br>
-                        padding: 20px; would have all sides as 20px<br>
-                        padding: 20px 50px; would have the top and bottom paddings as 20px, but left and right sides as 50px<br>
-                        padding: 20px 50px 40px 10px; would work clockwise. Top is 20px, right is 50px, bottom is 40px, and finally left is 10px.
-                </div> 
+                <div class="bacontentfix">
+                    We don't always have to have all the sides of our padding, borders, and margins matching. There are
+                    a number of ways to be a bit more unique! We can use properties to pinpoint sides - we can add
+                    "-top", "-bottom", "-left", and "-right" to our padding, borders, or margins.<br>
+                    We can also use shorthand to apply many values to one property! The values work in a clockwise
+                    direction, starting from the top, so:<br>
+                    padding: 20px; would have all sides as 20px<br>
+                    padding: 20px 50px; would have the top and bottom paddings as 20px, but left and right sides as
+                    50px<br>
+                    padding: 20px 50px 40px 10px; would work clockwise. Top is 20px, right is 50px, bottom is 40px, and
+                    finally left is 10px.
+                </div>
                 The margins are 0px on the top, 15px on the bottom, 20px to the left, and 60px to the right.
             </div>
             <div class="right ba">
                 <div class="bacontent">
-                        We don't always have to have all the sides of our padding, borders, and margins matching. There are a number of ways to be a bit more unique! We can use properties to pinpoint sides -  we can add "-top", "-bottom", "-left", and "-right" to our padding, borders, or margins.<br>
-                        We can also use shorthand to apply many values to one property! The values work in a clockwise direction, starting from the top, so:<br>
-                        padding: 20px; would have all sides as 20px<br>
-                        padding: 20px 50px; would have the top and bottom paddings as 20px, but left and right sides as 50px<br>
-                        padding: 20px 50px 40px 10px; would work clockwise. Top is 20px, right is 50px, bottom is 40px, and finally left is 10px.
-                </div> 
+                    We don't always have to have all the sides of our padding, borders, and margins matching. There are
+                    a number of ways to be a bit more unique! We can use properties to pinpoint sides - we can add
+                    "-top", "-bottom", "-left", and "-right" to our padding, borders, or margins.<br>
+                    We can also use shorthand to apply many values to one property! The values work in a clockwise
+                    direction, starting from the top, so:<br>
+                    padding: 20px; would have all sides as 20px<br>
+                    padding: 20px 50px; would have the top and bottom paddings as 20px, but left and right sides as
+                    50px<br>
+                    padding: 20px 50px 40px 10px; would work clockwise. Top is 20px, right is 50px, bottom is 40px, and
+                    finally left is 10px.
+                </div>
                 The margins are 0px on the top, 15px on the bottom, 20px to the left, and 60px to the right.
             </div>
         </div>
@@ -136,12 +159,15 @@
                 <div>
                     <button onclick="minus()">
                         < Previous</button>
-                    <button onclick="add()">Next ></button>
+                            <button onclick="add()">Next ></button>
                 </div>
             </div>
-            <h1>Level 2 - A Basic Page</h1>
-            Well done for your work on the box model - it'll be very important in these levels for you to know the difference between padding, border, and margin. Now that we've established the box model, let's recap what CSS can do! Using selectors, properties, and values, we can style our page to look a bit more exciting!<br>
-            For Level 2, we're just going to recap some basic CSS. Try to get the pane on the top right to match the pane on the bottom!<br>Remember:<br> <b> selector{ <br>property: value;<br>}</b>
+            <h1>Level 3 - A Basic Page</h1>
+            Well done for your work on the box model - it'll be very important in these levels for you to know the
+            difference between padding, border, and margin. Now that we've established the box model, let's recap what
+            CSS can do! Using selectors, properties, and values, we can style our page to look a bit more exciting!<br>
+            For Level 3, we're just going to recap some basic CSS. Try to get the pane on the top right to match the
+            pane on the bottom!<br>Remember:<br> <b> selector{ <br>property: value;<br>}</b>
             <pre>
                 body{
                     <input type="text" id="bgsyntax" onkeyup="lineOne()">:<input type="text" id="bginput" onkeydown="bgValue()" onkeyup="bgValue()"> 
@@ -213,11 +239,12 @@ Check prefix/suffix of IDS match level number! ALL IDs need b in-->
                 <div>
                     <button onclick="minus()">
                         < Previous</button>
-                    <button onclick="add()">Next ></button>
+                            <button onclick="add()">Next ></button>
                 </div>
             </div>
-            <h1>Level 3 - Spacing</h1>
-            Well done for your work on Level 2! Things are moving up a notch now - we'll be looking into more properties, and seeing how they can affect a
+            <h1>Level 4 - Spacing</h1>
+            Well done for your work on Level 3! Things are moving up a notch now - we'll be looking into more
+            properties, and seeing how they can affect a
             page! The box model information will come in handy here!
             Remember to use the information in the panes on the right for some help in terms of colours and sizes, and
             remember you can open another tab and research anything you need - or pop into the course-materials channel
@@ -227,7 +254,6 @@ Check prefix/suffix of IDS match level number! ALL IDs need b in-->
             <a href="https://www.w3schools.com/CSSref/pr_border-style.asp" target="_blank">W3 Schools CSS Border
                 Style</a><br>
             <a href="https://www.w3schools.com/Css/css_boxmodel.asp" target="_blank">W3 Schools Box Model</a>
-            <br>for some extra reading!
 
             <pre>
                 body{
@@ -323,8 +349,9 @@ Check prefix/suffix of IDS match level number! ALL IDs need c in-->
                             <button onclick="add()">Next ></button>
                 </div>
             </div>
-            <h1>Level 4 - Sizing and Positioning</h1>
-            Well done for your work on Level 3! Here, we've got a few more properties that we saw in the presentation - and some that might need a bit of research!<br>
+            <h1>Level 5 - Sizing and Positioning</h1>
+            Well done for your work on Level 4! Here, we've got a few more properties that we saw in the presentation -
+            and some that might need a bit of research!<br>
             Remember to use the information in the panes on the right for some help in terms of colours and sizes, and
             remember you can open another tab and research anything you need - or pop into the course-materials channel
             on Slack!<br>
@@ -333,7 +360,7 @@ Check prefix/suffix of IDS match level number! ALL IDs need c in-->
             <a href="https://www.w3schools.com/CSSref/pr_border-style.asp" target="_blank">W3 Schools CSS Border
                 Style</a><br>
             <a href="https://www.w3schools.com/Css/css_boxmodel.asp" target="_blank">W3 Schools Box Model</a>
-            <br>for some extra reading!
+
 
             <pre>
                     body{
@@ -416,8 +443,9 @@ Check prefix/suffix of IDS match level number! ALL IDs need d in-->
                             <button onclick="add()">Next ></button>
                 </div>
             </div>
-            <h1>Level 5 - A Bit More Stylish</h1>
-            Well done for your work on Level 4! We're going to put a bit more focus on making our pages look stylish now, and seeing what we can do with backgrounds and fonts!<br>
+            <h1>Level 6 - A Bit More Stylish</h1>
+            Well done for your work on Level 5! We're going to put a bit more focus on making our pages look stylish
+            now, and seeing what we can do with backgrounds and fonts!<br>
             Remember to use the information in the panes on the right for some help in terms of colours and sizes, and
             remember you can open another tab and research anything you need - or pop into the course-materials channel
             on Slack!<br>
@@ -425,8 +453,7 @@ Check prefix/suffix of IDS match level number! ALL IDs need d in-->
             <a href="https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html" target="_blank">W3
                 Docs - Font Importing</a> <br>
             <a href="https://www.w3schools.com/cssref/css3_pr_background.asp" target="_blank">W3 Schools
-                Background</a><br>
-            for some extra reading!
+                Background</a>
 
             <pre>
                     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); 
@@ -517,15 +544,24 @@ Check prefix/suffix of IDS match level number! ALL IDs need e in-->
                             <button onclick="add()">Next ></button>
                 </div>
             </div>
-            <h1>Level 6</h1>
-            Welcome to Level 6, where we take a look at Flexbox! If you haven't covered Flexbox in class yet, don't worry! You can come back to this level later. Flexbox is CSS syntax we can use to lay our content out in an easier way than before. We can tell it to put our content into rows or columns, and then from that we can can tell flexbox how to arrange our items - do we want space around the items? Do we want them at the top of the container? It's very flexible!<br>
+            <h1>Level 7 - Flexbox</h1>
+            Welcome to Level 7, where we take a look at Flexbox! If you haven't covered Flexbox in class yet, don't
+            worry! You can come back to this level later. Flexbox is CSS syntax we can use to lay our content out in an
+            easier way than before. We can tell it to put our content into rows or columns, and then from that we can
+            can tell flexbox how to arrange our items - do we want space around the items? Do we want them at the top of
+            the container? It's very flexible!<br>
             I'd recommend taking a look at:<br>
             <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3 Schools Flexbox</a> <br>
             <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks -
-                Flexbox</a><br>
-            for some extra reading!
+                Flexbox</a>
 
             <pre>
+                @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap')
+
+                <input type="text" id="levelFiveWild" onkeyup="lvlFiveWild()">{
+                    font-family: 'Josefin Sans', sans-serif;
+                }
+
                 body{
                     background-color:seashell;
                 }
@@ -543,8 +579,7 @@ Check prefix/suffix of IDS match level number! ALL IDs need e in-->
                 .content{
                     display:flex;
                     flex-direction: <input type="text" id="levelFiveCol" onkeyup="lvlFiveCol()">;
-                    justify-content: space-evenly;
-                    align-items: center;
+                    <input type="text" id="levelFiveAlig" onkeyup="lvlFiveAlig()">: center;
                     height: 70%;
                 }
                 
@@ -556,7 +591,7 @@ Check prefix/suffix of IDS match level number! ALL IDs need e in-->
             <p id="helptext5" class="helptext">Try entering values above to make the right hand side of the screen match
                 the image above
             </p>
-            <button onclick="fullChecke()" class="centre">All done?</button>
+            <button onclick="fullCheckE()" class="centre">All done?</button>
         </div>
         <div class="content2">
             <div class="right eefix">
@@ -569,14 +604,18 @@ Check prefix/suffix of IDS match level number! ALL IDs need e in-->
                     <div class="eecontentfix">
                         <div class="eeinnerfix">
                             This div has a class of "inner" and is inside the div "content". If "content" is a flex
-                            container, the things nested within it are the items moved around with the flex properties - so
-                            you will see this div "inner" move around "content", but not these words move around "inner".
+                            container, the things nested within it are the items moved around with the flex properties -
+                            so
+                            you will see this div "inner" move around "content", but not these words move around
+                            "inner".
                         </div>
                         <img src="lvl6.png">
                         <div class="eeinnerfix">
                             This div has a class of "inner" and is inside the div "content". If "content" is a flex
-                            container, the things nested within it are the items moved around with the flex properties - so
-                            you will see this div "inner" move around "content", but not these words move around "inner".
+                            container, the things nested within it are the items moved around with the flex properties -
+                            so
+                            you will see this div "inner" move around "content", but not these words move around
+                            "inner".
                         </div>
                     </div>
                 </div>
@@ -588,26 +627,31 @@ Check prefix/suffix of IDS match level number! ALL IDs need e in-->
                     <a href="index.html">A link</a>
                 </div>
                 <div>
-                <div class="eecontent">
-                    <div class="eeinner">
-                        This div has a class of "inner" and is inside the div "content". If "content" is a flex
-                        container, the things nested within it are the items moved around with the flex properties - so
-                        you will see this div "inner" move around "content", but not these words move around "inner".
-                    </div>
-                    <img src="lvl6.png">
-                    <div class="eeinner">
-                        This div has a class of "inner" and is inside the div "content". If "content" is a flex
-                        container, the things nested within it are the items moved around with the flex properties - so
-                        you will see this div "inner" move around "content", but not these words move around "inner".
+                    <div class="eecontent">
+                        <div class="eeinner">
+                            This div has a class of "inner" and is inside the div "content". If "content" is a flex
+                            container, the things nested within it are the items moved around with the flex properties -
+                            so
+                            you will see this div "inner" move around "content", but not these words move around
+                            "inner".
+                        </div>
+                        <img src="lvl6.png">
+                        <div class="eeinner">
+                            This div has a class of "inner" and is inside the div "content". If "content" is a flex
+                            container, the things nested within it are the items moved around with the flex properties -
+                            so
+                            you will see this div "inner" move around "content", but not these words move around
+                            "inner".
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        <!-- Level 6 Codes here
+    </div>
+    <!-- Level 6 Codes here
 Code for Level 6 - Left pane for entering, top right for updating, bottom right for comparing 
 Check prefix/suffix of IDS match level number! ALL IDs need f in-->
-        <!-- <div class="container five">
+    <div class="container six">
         <div class="content">
             <div class="headerleft">
                 <div class="logo">
@@ -616,86 +660,103 @@ Check prefix/suffix of IDS match level number! ALL IDs need f in-->
                 <div>
                     <button onclick="minus()">
                         < Previous</button>
-                            <button onclick="add()">Next ></button>
                 </div>
             </div>
-            <h1>Level 5</h1>
-            Welcome to Level 5! For this level, we're going to be introducing a new concept - <b>pseudo classes</b><br>
-            We're nearly at the end - this is the final level! We've gone over lots of the things we looked at in our main CSS lesson. The final hurdle is flexbox!
-            I'd recommend taking a look at:<br>
-            <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3 Schools Flexbox</a> <br>
-            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks - Flexbox</a><br>
-            <br>for some extra reading!
+            <h1>Level 8 - Pseudo Classes</h1>
+            Welcome to Level 8! For this level, we're going to be introducing a new concept - <b>pseudo
+                classes</b> - classes which impact the state of an element. When you hover over a link on a website,
+            what usually happens? Does it change at all?<br> Try hovering over some of the elements in the bottom right pane - do they change?
+            This is a big one, but you've got this far! I'd recommend taking a look at:<br>
+            <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">W3 Pseudo-Classes</a> <br>
 
             <pre>
-                body{
-                    background-color:<input type="text" id="levelTwobg" onkeyup="lvlTwoBgColour()">;
-                }
-                
-                .header{
-                    width:100%;
-                    background-color:coral;
-                    <input type="text" id="levelTwoText" onkeyup="lvlTwoText()">-align: center;
-                    font-size: 40<input type="text" id="levelTwoFont" onkeyup="lvlTwoFontPx()">;
-                }
-                
-                .content{
-                    background-color: cornsilk;
-                    width:75%;
-                    margin<input type="text" id="levelTwoMarg" onkeyup="lvlTwoMTop()">:20px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    display: block;
-                    border: 5px <input type="text" id="levelTwoBorder" onkeyup="lvlTwoBord()"> lightcoral;
-                    font-size: 18px;
-                    <input type="text" id="levelTwoPadding" onkeyup="lvlTwoPad()">: 10px;
-                }
+                    .body{
+                        background-image: url('bg2.jpeg');
+                    }
+                    
+                    .nav{
+                        height:10%;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        <input type="text" id="levelSixDisp" onkeyup="lvlSixDisp()">: flex;
+                        justify-content: space-evenly;
+                        align-items:center;
+                        font-size: 20px;
+                    }
+                    
+                    .<input type="text" id="levelSixBar" onkeyup="lvlSixBar()"> a{
+                        color: white;
+                        font-size: 20px;
+                        text-decoration: none;
+                    }
+
+                    .nav a:<input type="text" id="levelSixHover" onkeyup="lvlSixHover()">{
+                        color: orange;
+                    }
+                    
+                    .content{
+                        display:flex;
+                        justify-content: space-evenly;
+                        height:80%;
+                    }
+                    
+                    .inner{
+                        width:85%;
+                        height:100%;
+                        background-color: rgba(255, 255, 255, 0.8);
+                    }
+                    
+                    img{
+                        display:block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border: 10px solid white;
+                    }
+                    
+                    img:hover{
+                        <input type="text" id="levelSixBord" onkeyup="lvlSixBord()">: 10px solid rgba(0, 0, 0, 0.5);
+                    }
             </pre>
-            <p id="helptext2" class="helptext">Try entering values above to make the right hand side of the screen match
+            <p id="helptext6" class="helptext">Try entering values above to make the right hand side of the screen
+                match
                 the image above
             </p>
-            <button onclick="fullChecke()" class="centre">All done?</button>
+            <button onclick="fullCheckF()" class="centre">All done?</button>
         </div>
         <div class="content2">
             <div id="right2" class="right ccfix">
-                <div class="ccheaderfix">
-                    Hello and Welcome
-                </div>
-                <div class="cccontentfix">
-                    Welcome to my website I hope you enjoy it.<br>
-                    This div has the class of "content"<br>
-                    Helpful hints:<br>
-                    Colour strings are:<br>
-                    coral & cornsilk & lightcoral
-                </div>
+                <div class="right fffix">
+                    <div class="ffnavfix">
+                        <a href="index.html">A link</a>
+                        <a href="index.html">A link</a>
+                        <a href="index.html">A link</a>
+                    </div>
+                    <div class="ffcontentfix">
+                        <div class="ffinnerfix">
+                            <img src="lvl3.png" class="ffimgfix">
+                            The navbar has a class of nav.<br>
+                            Below is a div with the class of content.<br>
+                            Content is used to position this div - inner.<br>
 
-                <div class="cccontentfix">
-                    This div has also the class of "content". <br>
-                    We can reuse classes on as many things as we like!<br>
-                    Sizes of things:<br>
-                    Big fonts are <b>40px</b><br>
-                    Other fonts are <b>18px</b><br>
-                    Borders are <b>5px</b><br>
-                    Gaps between things are <b>20px</b><br>
-                    Spaces inside things are <b>10px</b><br>
-                </div>
-            </div>
-            <div class="right ee">
-                <div class="eenav">
-                    <a href="index.html">A link</a>
-                    <a href="index.html">A link</a>
-                    <a href="index.html">A link</a>
-                </div>
-                <div class="eecontent">
-                    <div class="eeinner">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab repellendus exercitationem ut iusto iste tempore, debitis perspiciatis nobis veritatis quidem harum distinctio est, porro blanditiis aut pariatur voluptas accusantium quo ratione dolorem placeat possimus amet rem! Labore voluptate qui provident?
-                    </div>
-                    <div class="eeinner">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab repellendus exercitationem ut iusto iste tempore, debitis perspiciatis nobis veritatis quidem harum distinctio est, porro blanditiis aut pariatur voluptas accusantium quo ratione dolorem placeat possimus amet rem! Labore voluptate qui provident?
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+            <div class="right ff">
+                <div class="ffnav">
+                    <a href="index.html">A link</a>
+                    <a href="index.html">A link</a>
+                    <a href="index.html">A link</a>
+                </div>
+                <div class="ffcontent">
+                    <div class="ffinner">
+                        <img src="lvl3.png" class="ffimg">
+                        The navbar has a class of nav.<br>
+                        Below is a div with the class of content.<br>
+                        Content is used to position this div - inner.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
